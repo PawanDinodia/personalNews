@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Information center</title>
+	<!-- offline files -->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/styles.css')}}">
+	<link rel="icon" type="image/png" href="{{url_for('static',filename='imgs/logo.png')}}">
+	<!-- online files -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet"> -->
+	<!-- font-family: 'Fruktur', cursive; -->
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+	<!-- font-family: 'Zen Kurenaido', sans-serif; -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">  -->
+	<!-- font-family: 'Dongle', sans-serif; -->
+	<script type="text/javascript" src="{{url_for('static',filename='scripts/jquery.js')}}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="main">
+	<section class="top_bar">
+		<div class="menu_icons">
+			<ul><li><a href="javascript:void(0);" id="menu_button"><img src="{{url_for('static',filename='imgs/menu_light.png')}}">&nbsp;&nbsp;Catagories</a>
+			</li>
+			<!-- <li><a href="javascript:void(0);"><img src="{{url_for('static',filename='imgs/edit_list_light.png')}}">&nbsp;Edit list</a>
+			</li> -->
+			<li id="refresh_list_top_menu"><a href="javascript:void(0);"><img src="{{url_for('static',filename='imgs/refresh_light.png')}}">&nbsp;Refresh</a>
+			</li>
+			<!-- <li><a href="javascript:void(0);"><img src="{{url_for('static',filename='imgs/filter_light.png')}}">&nbsp;Filter list</a>
+			</li> -->
+			</ul>
+		</div>
+	</section><section class="side_bar">
+		<div class="full_side_bar" id="full_side_bar">
+			<ul>
+			<!-- <li><a href="javascript:void(0);">&nbsp;&nbsp;Medical devices</a>
+			</li><li><a href="javascript:void(0);">&nbsp;&nbsp;Jobs</a>
+			</li><li><a href="javascript:void(0);">&nbsp;&nbsp;Fellowships</a>
+			</li><li><a href="javascript:void(0);">&nbsp;&nbsp;Projects</a>
+			</li><li><a href="javascript:void(0);">&nbsp;&nbsp;Other updates</a>
+			</li> -->
+		</ul>			
+		</div>
+	</section><section class="webUpdatesArea">
+		<div class="updates_sec">
+<!-- 			<div class="update_catagory">
+				<div class="cat_heading">Medical devices</div>
+				<div class="updateType">
+				<a href="javascript:void(0);" target="_blank">Medical device alert</a>
+				<div class="updates">
+					<table class="update_table">
+						<tbody>
+							<tr><td>Sr. no.
+							</td><td class="important_head">Star
+							</td><td>Description
+							</td><td>Delete
+							</td><td>New/Old
+							</td></tr>
+
+							<tr id="1" class="update_row"><td class="srno">1
+							</td><td class="important"><img class="unstarred" src="{{url_for('static',filename='imgs/unstarredImage.png')}}"><img class="starred hidden" src="{{url_for('static',filename='imgs/starredImage.png')}}">
+							</td><td class="updateTitle"><a target="_blank" href="javascript:void(0);">Medical Devices Alert on MiniMed 620G Insulin Pump/Pump Kits & MiniMed 640G Insulin Pump/Pump kit of India Medtronic Ltd edgregergergeredfldjanfjsnflijbfnwidjnfiweujnf</a><br>25-Oct-2021
+							</td><td class="delete_update"><img src="{{url_for('static',filename='imgs/del.png')}}">
+							</td><td class="markNew new">New
+							</td></tr>
+
+							<tr id="2" class="update_row"><td class="srno">2
+							</td><td class="important"><img  class="unstarred" src="{{url_for('static',filename='imgs/unstarredImage.png')}}"><img  class="starred hidden" src="{{url_for('static',filename='imgs/starredImage.png')}}">
+							</td><td class="updateTitle"><a target="_blank" href="javascript:void(0);">Medical Devices alert for Ventilator of Philips August 2021</a><br>16-Sep-2021
+							</td><td class="delete_update"><img src="{{url_for('static',filename='imgs/del.png')}}">
+							</td><td class="markNew">Old
+							</td></tr>
+						</tbody>
+					</table>
+				</div></div>
+			</div> -->
+		</div>
+	</section>
+	<section class="tst">
+		<div class="tst_area" id="tst_area"><div id="tst_msg">Let me tell you a very long story! The story is so long that you even can't hear it at once. You have to sit for many many years, possibly for thousands of years.</div><div class="close_tst" id="close_tst">X</div></div>
+	</section>
+</div>
+
+<script type="text/javascript" src="{{url_for('static',filename='scripts/script.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static',filename='scripts/getDat.js')}}"></script>
+</body>
+</html>
